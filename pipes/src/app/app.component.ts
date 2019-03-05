@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Crazy Uncle Mikes Formatting and Sex Dungeon';
+  title = 'Crazy Uncle Mikes Pipe Formatting Page';
 }

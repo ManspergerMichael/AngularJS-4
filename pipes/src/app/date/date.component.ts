@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
+  date: Date;
 
   constructor() { }
 
   ngOnInit() {
+    this.date = new Date();
+
   }
 
 }
