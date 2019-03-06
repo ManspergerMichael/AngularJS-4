@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; //for two way binding
 
 import { AppComponent } from './app.component';
 import { CurencyComponent } from './curency/curency.component';
@@ -16,7 +17,7 @@ import { DatetimeComponent } from './datetime/datetime.component';
     DatetimeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
