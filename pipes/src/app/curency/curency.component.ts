@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurencyComponent implements OnInit {
   value: number;
-  
+  //functions also go here
+
   constructor() { 
     
   }
