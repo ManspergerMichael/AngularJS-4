@@ -1,5 +1,0 @@
-We also have a service, that we can utilize to request data from API. 
-We keep the TaskService at the same level/folder as the TaskComponent.
-
-IMPORTANT: Data is stored in the highest level Component 
-so all of that component's child components may retrieve the data from the parent component.
