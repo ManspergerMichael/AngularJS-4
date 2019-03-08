@@ -1,6 +1,6 @@
 <div class="container">
   <h4>Task Component</h4>
-  <!-- [tasks]="tasks" is required to pass the data to the child object-->
+  <!-- input decorator: [tasks]="tasks" is required to pass the data to the child object-->
   <!-- When the update tasks function is triggered ascronously with the parent function-->
   <app-task-list [tasks]="tasks" (updateTasksList)="updateTasks()"></app-task-list>
   <app-task-new></app-task-new>
