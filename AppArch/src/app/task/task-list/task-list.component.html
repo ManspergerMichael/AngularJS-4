@@ -1,9 +1,15 @@
 <div class="container">
     <h4>Task List Component</h4>
+    <p>This componnt inherits dats from the parent component Task</p>
     <p>Whole tasks array in raw json</p>
     <p>{{tasks | json}}</p>
-    <p>Task List with ng-for</p>
+    <p>Task with str intrlopation</p>
+    <p>{{tasks[0].title}}</p>
+    <p>Tasks with ng-for</p>
     <ul>
-      <li></li>
+        <li *ngFor="let task of tasks">
+            {{task.title}}
+          </li>
     </ul>
+
 </div>
