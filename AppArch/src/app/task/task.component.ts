@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
+  //this array of objects is what will be passed back and forth
   tasks: any[] = [ 
     {title:'first task'},
     {title:'second task'}
-  ];
+  ]; 
   constructor() { }
 
   ngOnInit() {
