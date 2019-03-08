@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 //import Input to receve data from parent, Output to send data back
+//Event emmetier will bubble up an event to the parent component
 
 @Component({
   selector: 'app-task-list',
@@ -8,14 +9,18 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TaskListComponent implements OnInit {
   @Input() tasks: any[];
-  @Output() updateTasksChild = new EventEmitter();
+  //this event triggers an event in the parent
+  @Output() updateTasksList = new EventEmitter();
 
-  constructor() { }
-  onSomeEvent(){
-    this.updateTasksChild.emit();
+  constructor() { 
+    this.update();
   }
-
+  //This will trigger the update tasks event emitter
+  
   ngOnInit() {
+  }
+  update(){
+    this.updateTasksList.emit();
   }
 
 }
