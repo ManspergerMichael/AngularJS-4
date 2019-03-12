@@ -1,0 +1,11 @@
+.container{
+    border: 3px black dotted;
+    margin: 5px;
+}
+.complete{
+    border: 3px green dotted;
+    margin: 10px;
+}
+.incomplete{
+    border: 3px red dotted;
+}
