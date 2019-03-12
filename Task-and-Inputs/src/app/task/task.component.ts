@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskComponent implements OnInit {
   tasks: any[] = [
-    {title:'First Task',status:'false'},
-    {title:'Second Task',status:'true'},
-    {title:'Third Task',status:'false'}
+    {title:'First Task',status:false},
+    {title:'Second Task',status:true},
+    {title:'Third Task',status:false}
   ]
 
   constructor() { }

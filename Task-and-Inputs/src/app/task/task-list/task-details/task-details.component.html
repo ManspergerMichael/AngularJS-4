@@ -1,6 +1,21 @@
-<div class="container">
-  <h6>Task Details Component</h6>
-  <div *ngFor="let task of tasks">
-    {{task.title}}
+<div *ngFor="let task of tasks">
+
+  <div *ngIf="task.status == true">
+      <h5>Task Details Component</h5>
+      <p>Task Title: {{task.title}}</p>
+      <div class="complete">
+        <button>Click to mark Incomplete</button>
+        <p>Completed</p>
+      </div>
   </div>
+
+  <div *ngIf="task.status == false">
+      <h5>Task Details Component</h5>
+      <p>Task Title: {{task.title}}</p>
+      <div class="incomplete">
+        <button>Click to mark Complete</button>
+        <p>Incompleted</p>
+      </div>
+    </div>
+
 </div>

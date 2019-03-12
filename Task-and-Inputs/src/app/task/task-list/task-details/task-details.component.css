@@ -8,4 +8,5 @@
 }
 .incomplete{
     border: 3px red dotted;
+    margin:10px;
 }
