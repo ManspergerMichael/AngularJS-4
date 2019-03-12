@@ -1,11 +1,6 @@
 <div class="container">
   <h6>Task Details Component</h6>
-  <p>Task Title: "Task Name"</p>
-  <div class="task">
-    <!--ng-if task.status click to complete or mark incomplete-->
-    <div class="complete">
-        <button>Click to Complete</button>
-        <p>Status</p>
-    </div> 
+  <div *ngFor="let task of tasks">
+    {{task.title}}
   </div>
 </div>

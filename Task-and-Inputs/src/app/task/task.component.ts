@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
+  tasks: any[] = [
+    {title:'First Task',status:'false'},
+    {title:'Second Task',status:'true'},
+    {title:'Third Task',status:'false'}
+  ]
 
   constructor() { }
 
