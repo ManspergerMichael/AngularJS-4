@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskServiceComponent } from '../task-service/task-service.component';
+//import { TaskServiceComponent } from '../task-service/task-service.component';
 
 @Component({
   selector: 'app-task',
@@ -8,8 +8,11 @@ import { TaskServiceComponent } from '../task-service/task-service.component';
 })
 export class TaskComponent implements OnInit {
   //this array of objects is what will be passed back and forth
-  tasks: any[] = []; 
-  constructor(private _taskService: TaskServiceComponent) { }
+  tasks: any[] = [
+    {title:"Eat Shit"},
+    {title:"Die"}
+  ]; 
+  constructor() { }
 
   ngOnInit() {
   }
