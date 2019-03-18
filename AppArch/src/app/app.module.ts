@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { TaskComponent } from './task/task.component';
 import { TaskListComponent } from './task/task-list/task-list.component';
 import { TaskNewComponent } from './task/task-new/task-new.component';
-import { TaskServiceComponent } from './task-service/task-service.component';
-//import { TaskServiceComponent } from './task-service/task-service.component';
+import { TaskServiceService } from './task/task-service.service';
+
+
 
 @NgModule({
   declarations: [
@@ -15,14 +16,13 @@ import { TaskServiceComponent } from './task-service/task-service.component';
     TaskComponent,
     TaskListComponent,
     TaskNewComponent,
-    TaskServiceComponent,
-    //TaskServiceComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TaskServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

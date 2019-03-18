@@ -1,10 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <app-task></app-task>
-<router-outlet></router-outlet>
+  <h1>Welcome to {{ title }}!</h1>
 </div>
-
+<div class="data">
+  <p>Created task Service, data is sent to app-component dumping it here</p>
+  <ul>
+    <li *ngFor="let task of tasks">
+      {{task.title}}
+    </li>
+  </ul>
+</div>
+<app-task></app-task>
+<router-outlet></router-outlet>
 
