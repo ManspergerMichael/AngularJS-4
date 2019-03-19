@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //import the service to access its data
-import { TaskServiceService } from './task/task-service.service'
+import { TaskServiceService } from './task/task-service.service';
 
 @Component({
   selector: 'app-root',
