@@ -16,7 +16,6 @@ import { TaskServiceService } from './task/task-service.service';
     TaskComponent,
     TaskListComponent,
     TaskNewComponent,
-    
   ],
   imports: [
     BrowserModule,

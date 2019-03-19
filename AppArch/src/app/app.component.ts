@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TaskServiceService } from './task/task-service.service'
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AppArch';
   tasks: Array<any>;
-  constructor(){
+  constructor(private _taskService: TaskServiceService){
    
+  }
+  ngOnInit(){
+    console.log(this._taskService);
   }
 }
