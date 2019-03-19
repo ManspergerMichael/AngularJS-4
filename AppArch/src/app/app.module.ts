@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//required for importing and using @angular/http
+import { HttpModule } from '@angular/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './task/task.component';
@@ -19,7 +22,8 @@ import { TaskServiceService } from './task/task-service.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [TaskServiceService],
   bootstrap: [AppComponent]
