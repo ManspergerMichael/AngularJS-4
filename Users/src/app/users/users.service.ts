@@ -6,7 +6,9 @@ import { Http } from '@angular/http';
 })
 export class UsersService {
   users: Array<User> = [
-    new User("Bojack")
+    new User("Bojack"),
+    new User("Diane"),
+    new User("HollyHock")
   ];
 
   constructor(private _http: Http) 

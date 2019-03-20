@@ -1,3 +1,8 @@
 <div class="body">
-  {{users | json}}
+  <h3>Users:</h3>
+  <ul>
+    <li *ngFor="let user of users">
+      {{user.name}} created at {{user.createdAt}}
+    </li>
+  </ul>
 </div>
