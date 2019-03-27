@@ -1,3 +1,4 @@
+//This is the Model
 export class User {
     name:string;
     createdAt: Date;
