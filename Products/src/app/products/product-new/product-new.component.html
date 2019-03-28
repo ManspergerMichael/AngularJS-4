@@ -1,14 +1,14 @@
 <div class="container">
   <h2>New Product Creation</h2>
-  <form>
+  <form (submit)="onSubmit(formData)" #formData="ngForm">
     <label for="name">Name:</label>
-    <input type="text" name="name">
+    <input type="text" name="name" [{ngModel}]="product.name">
     <label for="Description">Description:</label>
-    <input type="text" name="Description">
+    <input type="text" name="Description" [{ngModel}]="product.description">
     <label for="price">Price:</label>
-    <input type="text" name="price">
+    <input type="text" name="price" [{ngModel}]="product.price">
     <label for="quantity">Quantity:</label>
-    <input type="text" name="quantity">
+    <input type="text" name="quantity" [{ngModel}]="product.quantity">
     <input type="submit" value="Submit">
   </form>
 </div>
