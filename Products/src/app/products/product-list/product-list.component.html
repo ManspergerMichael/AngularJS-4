@@ -11,8 +11,18 @@
       <th>Actions</th>
     </thead>
     <tbody>
-      <tr>
-        <td> Display product data here</td>
+      <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price | currency}}</td>
+        <td>{{product.quantity}}</td>
+        <td>{{product.date_created | date}}</td>
+        <td>{{product.date_updated | date}}</td>
+        <td>
+          <form>
+            <input type="submit" value="Delete">
+          </form>
+        </td>
       </tr>
     </tbody>
   </table>
