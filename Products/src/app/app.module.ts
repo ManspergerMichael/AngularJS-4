@@ -7,6 +7,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductNewComponent } from './products/product-new/product-new.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductServiceService } from './products/product-service.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProductServiceService } from './products/product-service.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [ProductServiceService],
   bootstrap: [AppComponent]

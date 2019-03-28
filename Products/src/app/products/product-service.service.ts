@@ -16,6 +16,6 @@ export class ProductServiceService {
 
   constructor(private _http: Http) 
   {
-    console.log(_http)
+    //console.log(_http)
   }
 }

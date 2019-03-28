@@ -14,6 +14,8 @@ export class Product {
         this.quantity = quantity;
         this.date_created = new Date;
         this.date_updated = new Date;
-    }
+    };
+    
+    
 
 }
