@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductNewComponent } from './products/product-new/product-new.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
+import { ProductServiceService } from './products/product-service.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { ProductListComponent } from './products/product-list/product-list.compo
     ProductListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ProductServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
