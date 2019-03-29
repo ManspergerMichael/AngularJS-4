@@ -14,8 +14,17 @@ export class ProductServiceService {
     new Product("AK 47", "For wodka swilling commies",20.00,9000)
   ]
 
+  addProduct(product)
+  {
+    this.products.push(product);
+  }
+  retreveAll(){
+    return this.products;
+  }
+
   constructor(private _http: Http) 
   {
     //console.log(_http)
   }
+
 }
